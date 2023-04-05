@@ -44,9 +44,9 @@
         <section id="seccionBusqueda" class="py-3">
             <h2 class="text-center">Formulario de pokémones.</h2>
 
-            <form>
+            <form id="formPokemon">
                 <label for="nombre" class="form-label">Nombre / N° pokedex</label>
-                <input type="text" class="form-control" name="nombre">
+                <input type="text" class="form-control" name="nombre" id="formPokemonNombre" required>
                 <button type="submit" class="btn btn-primary mt-2">Consultar</button>
             </form>
 
@@ -57,15 +57,23 @@
 
             <!-- CARD CON INFORMACIÓN DEL POKÉMON-->
             <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img src="./assets/img/pokemon_default.webp" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-7">
+                        <div class="card-body">
+                          <h5 class="card-title">Nombre Pokémon</h5>
+                          <p class="card-text">Stats:</p>
+                          <div id="pokemonStats">
 
-                    <img src="https://picsum.photos/id/684/600/400" class="card-img-top" alt="Imagen 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Nombre Pokémon</h5>
-                      <p class="card-text">Descripción</p>
-                      <button class="btn btn-primary">Ver detalle</button>
+                          </div>
+                          <button class="btn btn-primary">Ver detalle</button>
+                        </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
             </div>
         </section>
 
